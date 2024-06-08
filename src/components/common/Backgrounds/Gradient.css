@@ -1,0 +1,130 @@
+.wrap__full {
+    height: 100vh;
+}
+.wrap__component {
+    min-height: 100%;
+}
+.cont__full {
+    justify-content: start;
+}
+.cont__component {
+    justify-content: center;
+    border-radius: 11px;
+    /* height: 100vh; */
+}
+
+.gradient__containerApril,
+.monohrom__containerApril,
+.newgradient__containerApril {
+    min-width: 100%;
+    min-height: 100%;
+    /* margin: 25px; */
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+
+}
+
+.content__wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.monohrom__containerApril {
+    background: rgb(238, 242, 244);
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.822) 0%, rgba(255, 255, 255, 0.384) 48%, rgb(255, 255, 255) 100%);
+    animation: gradient 2s ease infinite;
+    background-size: 5000% 5000%; */
+    color: rgb(0, 0, 0);
+}
+
+.gradient__containerApril {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #4bafff 100%);
+    animation: gradient 7s ease infinite;
+    background-size: 5000% 5000%;
+    color: rgb(255, 255, 255);
+}
+
+.loader__title {
+    /* height: 20px !important; */
+    font-family: 'Source Sans Pro' !important;
+    margin: 7px;
+    font-weight: 900;
+    font-size: 14px !important;
+    /* Пример размера шрифта */
+    background: linear-gradient(to right, rgb(40, 104, 212), #8A2BE2, #0ef1f1, #FF007F, #9c17c4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-color: #f0f0f0;
+    /* Цвет фона страницы */
+    display: inline;
+    animation: gradient 13s ease infinite;
+    background-size: 5000% 5000%;
+
+    /* Чтобы градиент применялся только к тексту */
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.children__wrapper {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    /* border: 1px solid; */
+}
+
+.newgradient__containerApril {
+
+    /* background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+
+    animation: gradient 7s ease infinite;
+    background-size: 5000% 5000%;
+    color: rgb(255, 255, 255);
+}
+
+.newchildren__wrapper {
+    width: 100px;
+    height: 100px;
+    max-width: 80px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(255, 255, 255); */
+    border-radius: 17%;
+    border: 2px solid rgba(40, 103, 212, 0.821);
+    background-color: white;
+}
